@@ -1,0 +1,22 @@
+<% layout('layouts/boilerplate') -%>
+
+<body>
+    <h1>Wanderlust</h1>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <%for(let l of allListings){%>
+            <a href="/listings/<%=l.id%>" class="listing-link">
+                <div class="card col zoom-img-hover">
+                    <img class="card-img-top" src="<%=l.image.url%>" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text"> 
+                        <b><%=l.title%></b>: 
+                        <br>
+                        <b>&#8377;<%=l.price%></b>
+                      </p>
+                    </div>
+                </div>
+            </a>
+        <%}%>
+    </div>
+    <script src="/js/search.js"></script>
+</body>

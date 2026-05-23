@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+.navbar{
+    background-color: white;
+}
+
+.fa-compass{
+    color: rgba(255, 0, 0, 0.87);
+    font-size: 2rem;
+}
+
+.nav-link{
+    font-weight: bold !important;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav .left , .right{
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-nav .middle{
+    display: none;
+}
+
+/*footer*/
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links{
+    width: 100%;
+}
+
+.f-info-social{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.f-info-social i{
+    margin-right: 0.8rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* card */
+.card {
+    border: none !important;
+    margin-bottom: 2rem !important;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    height: 15rem;
+}
+
+.listing-link{
+    text-decoration: none ;
+}
+
+
+/*show image*/
+#show-img{
+    height: 30rem;
+}
+ .btns{
+    display: flex;
+ }
+
+ /* review card */
+ .review{
+    border: 2px solid black !important;
+    border-radius: 2px;
+ }
+
+
+ /* zoom img effect */
+
+.zoom-img-hover{
+    border: 1px solid #ccc !important;
+    border-radius: 1rem !important;
+     overflow: hidden; 
+}
+
+.zoom-img-hover img{
+    border-radius: 0rem !important;
+    transition: transform 0.5s ease-in;
+}
+
+
+.zoom-img-hover:hover img {
+  transform: scale(1.1);
+}
